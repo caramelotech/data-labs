@@ -1,0 +1,35 @@
+---
+title: Caramelo Labs
+description: Espaço de aprendizado prático da Caramelo Tech.
+template: splash
+hero:
+  tagline: Aprenda fazendo. Explore conceitos, exemplos e projetos práticos de programação.
+  actions:
+    - text: Começar agora
+      link: /caramelo-labs/01-introducao/
+      icon: right-arrow
+      variant: primary
+    - text: GitHub
+      link: https://github.com/caramelotech/caramelo-labs
+      icon: github
+      variant: minimal
+sidebar:
+  hidden: true
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+<CardGrid stagger>
+  <Card title="Notas" icon="open-book">
+    Conceitos explicados de forma clara e progressiva, do básico ao avançado.
+  </Card>
+  <Card title="Exemplos" icon="rocket">
+    Código funcional e comentado para ver os conceitos na prática.
+  </Card>
+  <Card title="Exercícios" icon="pencil">
+    Desafios para consolidar o aprendizado com a mão na massa. Disponíveis em `examples/exercises.md`.
+  </Card>
+  <Card title="Projetos" icon="star">
+    Projetos completos para aplicar tudo que foi aprendido. Disponíveis em `examples/projects.md`.
+  </Card>
+</CardGrid>
