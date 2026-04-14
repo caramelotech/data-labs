@@ -1,13 +1,13 @@
-# Caramelo Labs
+# Data Labs
 
-Laboratório prático da **Caramelo Tech** com foco em aprendizado hands-on através de exemplos, exercícios e projetos.
+Laboratório prático de dados da **Caramelo Tech** com foco em análise de dados, SQL, Python e engenharia de dados.
 
 ## O que você vai encontrar
 
-- Anotações em Markdown
-- Exemplos de código
-- Exercícios práticos
-- Mini projetos
+- Anotações sobre SQL, pandas, ETL e estatística aplicada
+- Exemplos de queries e scripts prontos para executar
+- Exercícios práticos com dados reais
+- Mini projetos de análise e pipelines de dados
 
 ## Estrutura do repositório
 
@@ -27,7 +27,7 @@ examples/           → Exemplos de código, exercícios e projetos práticos
 
 As anotações são publicadas via GitHub Pages com o tema Starlight (Astro).
 
-Acesse: https://caramelotech.github.io/caramelo-labs
+Acesse: https://caramelotech.github.io/data-labs
 
 ## Rodando localmente
 
@@ -49,7 +49,7 @@ description: "Descrição breve"
 lastUpdated: 2026-01-01
 sidebar:
   order: 4
-tags: ["tag1", "tag2"]
+tags: ["sql", "pandas"]
 ---
 ```
 
@@ -57,11 +57,12 @@ Subpastas são suportadas - use-as para agrupar notas por tema:
 
 ```
 src/content/docs/
-  javascript/
-    01-variaveis.md
-    02-funcoes.md
+  sql/
+    01-select.md
+    02-joins.md
   python/
-    01-introducao.md
+    01-pandas.md
+    02-visualizacao.md
 ```
 
 ## Sobre a Caramelo Tech

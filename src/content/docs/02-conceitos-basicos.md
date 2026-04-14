@@ -1,51 +1,73 @@
 ---
 title: "Conceitos Básicos"
-description: "Variáveis, tipos de dados, estruturas de controle, funções e estruturas de dados - os blocos essenciais de qualquer programa."
-lastUpdated: 2026-01-08
+description: "Tipos de dados, estruturas fundamentais, SQL básico e manipulação com pandas - os blocos essenciais para trabalhar com dados."
+lastUpdated: 2026-04-14
 sidebar:
   order: 2
-tags: ["fundamentos", "variáveis", "funções"]
+tags: ["fundamentos", "sql", "pandas", "tipos-de-dados"]
 ---
 
 ## Fundamentos
 
-Antes de avançar, é importante dominar os conceitos básicos.
-Aqui você vai encontrar os blocos de construção essenciais.
+Antes de avançar, é importante dominar os conceitos básicos de dados.
+Aqui estão os blocos de construção essenciais.
 
 ## Conceitos principais
 
-### Variáveis e Tipos de Dados
+### Tipos de Dados
 
-Armazenam valores que podem ser usados e manipulados no código.
+Dados existem em diferentes formatos e cada um tem características próprias.
 
-Exemplos comuns:
+- **Numérico** - inteiros e decimais (idades, preços, contagens)
+- **Texto** - strings (nomes, categorias, descrições)
+- **Data/Tempo** - timestamps (datas de transação, eventos)
+- **Booleano** - verdadeiro/falso (flags, indicadores)
 
-- Inteiros (`int`) - números sem casas decimais
-- Texto (`string`) - sequências de caracteres
-- Booleanos (`bool`) - `true` ou `false`
+### Estruturas de Dados Fundamentais
 
-### Estruturas de Controle
+As principais formas de organizar dados:
 
-Controlam o fluxo de execução do programa.
+- **Tabela / DataFrame** - dados em linhas e colunas (o formato mais comum)
+- **Série / Coluna** - sequência de valores de um mesmo tipo
+- **Chave-Valor** - pares associativos, como dicionários Python
 
-- **Condicional** (`if/else`) - executa código com base em uma condição
-- **Repetição** (`for`, `while`) - repete um bloco de código
+### SQL Básico
 
-### Funções
+Linguagem padrão para consultar bancos de dados relacionais.
 
-Agrupam lógica reutilizável.
+```sql
+-- Selecionar dados
+SELECT nome, idade
+FROM clientes
+WHERE idade > 18
+ORDER BY nome;
 
+-- Agregar
+SELECT cidade, COUNT(*) AS total
+FROM clientes
+GROUP BY cidade;
 ```
-função somar(a, b):
-    retornar a + b
+
+### Manipulação com Pandas
+
+A principal biblioteca Python para análise de dados.
+
+```python
+import pandas as pd
+
+df = pd.read_csv('dados.csv')
+
+# Explorar
+df.head()
+df.info()
+df.describe()
+
+# Filtrar
+adultos = df[df['idade'] > 18]
+
+# Agrupar
+df.groupby('cidade')['valor'].sum()
 ```
-
-### Estruturas de Dados
-
-Organizam e armazenam coleções de valores.
-
-- **Lista / Array** - coleção ordenada
-- **Mapa / Dicionário** - pares chave-valor
 
 ## Próximo passo
 

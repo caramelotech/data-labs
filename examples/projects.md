@@ -9,40 +9,47 @@ Mini projetos para aplicar o que foi aprendido.
 3. Implemente incrementalmente
 4. Teste cada parte antes de avançar
 
-## Projeto 01 - Calculadora Simples
+## Projeto 01 - Análise de Vendas
 
-**Objetivo:** Construir uma calculadora de linha de comando.
+**Objetivo:** Analisar um dataset de vendas e extrair insights.
 
 **Descrição:**
-Crie um programa que receba dois números e uma operação, e retorne o resultado.
-
-**Operações suportadas:**
-
-- Adição (`+`)
-- Subtração (`-`)
-- Multiplicação (`*`)
-- Divisão (`/`)
-
-**Exemplo de uso:**
-
-```
-Informe o primeiro número: 10
-Informe o operador (+, -, *, /): *
-Informe o segundo número: 5
-Resultado: 50
-```
+Dado um CSV com colunas `data`, `produto`, `categoria`, `quantidade` e `valor_unitario`, construa uma análise completa.
 
 **Requisitos:**
 
-- [ ] Receber os dois números via entrada do usuário
-- [ ] Receber o operador
-- [ ] Exibir o resultado correto
-- [ ] Tratar divisão por zero com uma mensagem de erro
+- [ ] Carregar e explorar o dataset (shape, tipos, nulos)
+- [ ] Criar a coluna `valor_total = quantidade * valor_unitario`
+- [ ] Calcular o faturamento total por mês
+- [ ] Identificar o produto mais vendido por categoria
+- [ ] Gerar um gráfico de faturamento mensal
 
 **Desafio extra:**
 
-- Permitir que o usuário faça múltiplos cálculos sem reiniciar o programa
-- Adicionar suporte a números decimais
+- Identificar meses com queda de vendas em relação ao mês anterior
+- Calcular o ticket médio por categoria
 
 **Dica:**
-Comece pela operação de adição. Quando funcionar, adicione as demais.
+Comece pela exploração. Só transforme os dados depois de entender o que tem.
+
+## Projeto 02 - Pipeline ETL Simples
+
+**Objetivo:** Construir um pipeline que extrai, transforma e carrega dados.
+
+**Descrição:**
+Crie um script Python que lê dados de uma fonte (CSV ou API pública), aplica transformações e salva o resultado processado.
+
+**Requisitos:**
+
+- [ ] Extrair dados de um arquivo CSV ou endpoint público
+- [ ] Remover duplicatas e tratar valores nulos
+- [ ] Adicionar colunas derivadas (ex: mês a partir de uma data)
+- [ ] Salvar o resultado em um novo CSV limpo
+
+**Desafio extra:**
+
+- Adicionar logs de execução com o número de linhas em cada etapa
+- Criar uma função para cada etapa (extract, transform, load)
+
+**Dica:**
+Estruture o código em funções desde o início. Pipelines viram um emaranhado rápido sem organização.

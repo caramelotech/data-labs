@@ -1,6 +1,6 @@
 # Examples
 
-Exemplos, exercícios e projetos práticos.
+Exemplos, exercícios e projetos práticos de dados.
 
 ## Arquivos
 
@@ -21,31 +21,31 @@ Exemplos prontos para executar.
 3. Execute
 4. Modifique e experimente
 
-### hello-world
+### exploração-basica
 
-O exemplo mais simples possível: exibir uma mensagem na tela.
+O ponto de partida para qualquer análise: entender o que tem no dataset.
 
-```
-# Pseudocódigo
-imprimir("Olá, Caramelo Tech!")
+```python
+import pandas as pd
+
+df = pd.read_csv('dados.csv')
+
+print(df.shape)        # linhas e colunas
+print(df.dtypes)       # tipos de cada coluna
+print(df.isnull().sum()) # valores nulos por coluna
+print(df.describe())   # estatísticas descritivas
 ```
 
 **O que acontece:**
 
-1. O programa inicia
-2. A função `imprimir` recebe o texto
-3. O texto é exibido na saída
+1. O CSV é carregado em um DataFrame
+2. `shape` mostra as dimensões
+3. `describe()` retorna contagem, média, desvio padrão, mínimo, máximo e quartis
 
 **Variações para praticar:**
 
-- Troque o texto pela sua própria mensagem
-- Imprima várias linhas
-- Combine texto com uma variável
+- Troque o CSV por outro dataset
+- Use `df.sample(10)` para ver linhas aleatórias
+- Filtre apenas colunas numéricas com `df.select_dtypes(include='number')`
 
-```
-# Com variável
-nome = "Caramelo"
-imprimir("Olá, " + nome + "!")
-```
-
-> Adapte este exemplo para a linguagem que você está estudando.
+> Adapte os exemplos para os seus próprios dados.

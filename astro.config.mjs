@@ -3,16 +3,16 @@ import starlight from '@astrojs/starlight';
 
 export default defineConfig({
   site: 'https://caramelotech.github.io',
-  base: '/caramelo-labs',
+  base: '/data-labs',
   integrations: [
     starlight({
-      title: 'Caramelo Labs',
+      title: 'Data Labs',
       customCss: ['./src/styles/custom.css'],
       social: [
         {
           icon: 'github',
           label: 'GitHub',
-          href: 'https://github.com/caramelotech/caramelo-labs',
+          href: 'https://github.com/caramelotech/data-labs',
         },
       ],
       defaultLocale: 'root',

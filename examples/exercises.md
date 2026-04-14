@@ -9,57 +9,53 @@ Pratique o que aprendeu nas anotações e exemplos.
 3. Consulte as notas se precisar de ajuda
 4. Compare sua solução com a dos colegas
 
-## Exercício 01 - Olá, Mundo!
+## Exercício 01 - Exploração de Dataset
 
-**Objetivo:** Exibir uma mensagem na tela.
+**Objetivo:** Carregar e explorar um dataset com pandas.
 
 **Instrução:**
-Escreva um programa que imprima `"Olá, Caramelo Tech!"` na saída.
+Carregue um arquivo CSV de sua escolha e responda:
+
+1. Quantas linhas e colunas tem o dataset?
+2. Quais colunas possuem valores nulos?
+3. Quais são os tipos de dados de cada coluna?
 
 **Critérios de sucesso:**
 
-- [ ] O programa executa sem erros
-- [ ] A mensagem aparece corretamente na saída
+- [ ] O dataset é carregado sem erros
+- [ ] `df.shape`, `df.info()` e `df.isnull().sum()` são usados corretamente
+- [ ] Os resultados são interpretados e descritos
 
-## Exercício 02 - Variáveis
+## Exercício 02 - Filtros e Agregações com SQL
 
-**Objetivo:** Trabalhar com variáveis e tipos de dados.
+**Objetivo:** Praticar SELECT, WHERE, GROUP BY e ORDER BY.
 
 **Instrução:**
+Dado uma tabela `vendas` com as colunas `produto`, `categoria`, `valor` e `data`:
 
-1. Crie uma variável com seu nome
-2. Crie uma variável com sua idade
-3. Imprima uma mensagem combinando as duas
-
-Exemplo de saída esperada:
-
-```
-Meu nome é Ana e tenho 25 anos.
-```
+1. Liste os 5 produtos com maior valor total vendido
+2. Calcule o total vendido por categoria
+3. Filtre apenas as vendas do último mês
 
 **Critérios de sucesso:**
 
-- [ ] As variáveis são criadas corretamente
-- [ ] A mensagem é exibida conforme esperado
+- [ ] As queries retornam os resultados corretos
+- [ ] GROUP BY e ORDER BY são usados corretamente
+- [ ] A filtragem por data funciona
 
-## Exercício 03 - Estrutura de Repetição
+## Exercício 03 - Limpeza de Dados
 
-**Objetivo:** Usar loops para repetir ações.
+**Objetivo:** Identificar e tratar problemas comuns em um dataset.
 
 **Instrução:**
-Escreva um programa que imprima os números de 1 a 10, um por linha.
+Dado um DataFrame com dados "sujos":
 
-Saída esperada:
-
-```
-1
-2
-3
-...
-10
-```
+1. Remova linhas completamente duplicadas
+2. Preencha valores nulos em colunas numéricas com a mediana
+3. Normalize a coluna de texto (remova espaços, converta para minúsculas)
 
 **Critérios de sucesso:**
 
-- [ ] Todos os números de 1 a 10 são exibidos
-- [ ] Cada número aparece em uma linha separada
+- [ ] Duplicatas são removidas com `drop_duplicates()`
+- [ ] Nulos são tratados com `fillna()`
+- [ ] A coluna de texto é normalizada com `str.strip()` e `str.lower()`

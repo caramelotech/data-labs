@@ -1,49 +1,70 @@
 ---
 title: "Avançando"
-description: "Modularização, tratamento de erros, testes e boas práticas para escrever código mais robusto e sustentável."
-lastUpdated: 2026-01-15
+description: "Joins, agregações avançadas, limpeza de dados, pipelines ETL e boas práticas para trabalhar com dados em produção."
+lastUpdated: 2026-04-14
 sidebar:
   order: 3
-tags: ["modularização", "testes", "boas-práticas"]
+tags: ["joins", "etl", "limpeza", "boas-práticas"]
 ---
 
 ## Indo além do básico
 
 Com os fundamentos dominados, é hora de avançar.
-Este arquivo cobre padrões e práticas que tornam o código mais robusto.
+Este arquivo cobre padrões e práticas para trabalhar com dados de forma mais robusta.
 
 ## Tópicos
 
-### Modularização
+### Joins e Relacionamentos
 
-Divida o código em partes menores e reutilizáveis.
+Combinar dados de múltiplas tabelas é essencial no dia a dia.
 
-- Cada módulo tem uma responsabilidade clara
-- Facilita testes e manutenção
-- Reduz duplicação de código
+```sql
+-- Pedidos com dados do cliente
+SELECT p.id, c.nome, p.valor
+FROM pedidos p
+JOIN clientes c ON p.cliente_id = c.id;
 
-### Tratamento de Erros
+-- LEFT JOIN para incluir registros sem correspondência
+SELECT c.nome, COUNT(p.id) AS total_pedidos
+FROM clientes c
+LEFT JOIN pedidos p ON c.id = p.cliente_id
+GROUP BY c.nome;
+```
 
-Programe para o caso de falha.
+### Limpeza de Dados
 
-- Identifique pontos onde erros podem ocorrer
-- Trate os erros de forma explícita
-- Forneça mensagens claras ao usuário
+Dados reais são sujos. Tratar isso é parte fundamental do trabalho.
 
-### Testes
+```python
+# Verificar valores nulos
+df.isnull().sum()
 
-Valide que o código faz o que deveria.
+# Preencher ou remover
+df['coluna'].fillna(0)
+df.dropna(subset=['coluna_critica'])
 
-- Escreva testes para cada função
-- Teste os casos normais e os casos de borda
-- Execute os testes com frequência
+# Remover duplicatas
+df.drop_duplicates()
+
+# Normalizar texto
+df['nome'] = df['nome'].str.strip().str.lower()
+```
+
+### Pipelines ETL
+
+Estruture o fluxo de dados de forma reproduzível.
+
+- **Extract** - leia os dados da fonte (CSV, banco, API)
+- **Transform** - limpe, filtre e enriqueça
+- **Load** - salve no destino (banco, arquivo, dashboard)
 
 ### Boas Práticas
 
-- Nomeie variáveis e funções de forma descritiva
-- Mantenha funções pequenas e focadas
-- Documente decisões importantes
-- Prefira clareza à esperteza
+- Sempre explore os dados antes de transformar (`head()`, `describe()`, `info()`)
+- Documente as transformações aplicadas
+- Versione os datasets e os scripts juntos
+- Prefira operações vetorizadas a loops em pandas
+- Teste seus pipelines com amostras pequenas antes de rodar no dataset completo
 
 ## Próximo passo
 
