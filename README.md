@@ -1,75 +1,52 @@
 # Data Labs
 
-Laboratório prático de dados da **Caramelo Tech** com foco em análise de dados, SQL, Python e engenharia de dados.
+Base de conhecimento sobre **dados** do Caramelo Tech - ciência de dados, análise e engenharia de dados.
 
-## O que você vai encontrar
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](.github/CONTRIBUTING.md)
 
-- Anotações sobre SQL, pandas, ETL e estatística aplicada
-- Exemplos de queries e scripts prontos para executar
-- Exercícios práticos com dados reais
-- Mini projetos de análise e pipelines de dados
+As notas deste repositório são publicadas no site do [Caramelo Labs](https://caramelotech.com.br/labs/data/).
+
+## Conteúdo
+
+| Tópico | Descrição |
+| ------ | --------- |
+| Fundamentos | Introdução, conceitos básicos e tópicos avançados |
 
 ## Estrutura do repositório
 
 ```
-src/content/docs/   → Anotações e estudos (publicadas no site)
-examples/           → Exemplos de código, exercícios e projetos práticos
+data-labs/
+├── notes/           → Anotações em Markdown puro (publicadas no site do Caramelo Labs)
+├── sidebar.json     → Seções da barra lateral no site
+├── examples/        → Exemplos, exercícios e projetos práticos
+└── LICENSE
 ```
+
+Este repositório contém **apenas conteúdo** - não há build, dependências ou configuração de site. A estrutura web (Astro + Starlight) vive no repositório hub [labs](https://github.com/caramelotech/labs), que busca as notas daqui a cada atualização e publica o site.
+
+## Escrevendo notas
+
+As notas em `notes/` são Markdown puro, sem frontmatter:
+
+- A primeira linha da nota deve ser o título: `# Título da Nota`
+- Use prefixo numérico no nome do arquivo para controlar a ordem na barra lateral: `01-introducao.md`, `02-conceitos.md`
+- Agrupe por tema em subpastas
+- Imagens ficam junto das notas (ex: `notes/secao/assets/img.png`) e são referenciadas com caminho relativo: `![descrição](./assets/img.png)`
+- Links para outras notas do site usam o caminho completo: `/labs/data/<secao>/<nota>/`
+
+Ao criar uma nova subpasta de tema, adicione a seção correspondente em `sidebar.json`.
 
 ## Como usar
 
-1. Comece pelas anotações em `src/content/docs/`
+1. Comece pelas anotações em `notes/` (ou pelo [site](https://caramelotech.com.br/labs/data/))
 2. Explore os exemplos em `examples/`
 3. Resolva os exercícios em `examples/exercises.md`
 4. Construa os projetos em `examples/projects.md`
 
-## Visualização
+## Contribuição
 
-As anotações são publicadas via GitHub Pages com o tema Starlight (Astro).
-
-Acesse: https://caramelotech.github.io/data-labs
-
-## Rodando localmente
-
-```bash
-npm install
-npm run dev     # servidor em localhost:4321
-npm run build   # build de produção
-npm run preview # preview do build
-```
-
-## Adicionando notas
-
-Crie um arquivo `.md` em `src/content/docs/` com o seguinte frontmatter:
-
-```yaml
----
-title: "Título da nota"
-description: "Descrição breve"
-lastUpdated: 2026-01-01
-sidebar:
-  order: 4
-tags: ["sql", "pandas"]
----
-```
-
-Subpastas são suportadas - use-as para agrupar notas por tema:
-
-```
-src/content/docs/
-  sql/
-    01-select.md
-    02-joins.md
-  python/
-    01-pandas.md
-    02-visualizacao.md
-```
-
-## Sobre a Caramelo Tech
-
-A Caramelo Tech é uma iniciativa focada em aprendizado prático de tecnologia.
-
-Aqui você não apenas lê - você constrói.
+Contribuições são bem-vindas! Veja o [Guia de Contribuição](.github/CONTRIBUTING.md) para detalhes.
 
 ## Licença
 
