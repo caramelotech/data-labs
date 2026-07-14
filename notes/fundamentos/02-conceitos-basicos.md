@@ -1,11 +1,4 @@
----
-title: "Conceitos Básicos"
-description: "Tipos de dados, estruturas fundamentais, SQL básico e manipulação com pandas - os blocos essenciais para trabalhar com dados."
-lastUpdated: 2026-04-14
-sidebar:
-  order: 2
-tags: ["fundamentos", "sql", "pandas", "tipos-de-dados"]
----
+# Conceitos Básicos
 
 ## Fundamentos
 

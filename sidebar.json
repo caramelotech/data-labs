@@ -1,0 +1,6 @@
+{
+  "sections": [
+    { "label": "Visão geral", "slug": "." },
+    { "label": "Fundamentos", "directory": "fundamentos" }
+  ]
+}

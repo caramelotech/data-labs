@@ -1,11 +1,4 @@
----
-title: "Avançando"
-description: "Joins, agregações avançadas, limpeza de dados, pipelines ETL e boas práticas para trabalhar com dados em produção."
-lastUpdated: 2026-04-14
-sidebar:
-  order: 3
-tags: ["joins", "etl", "limpeza", "boas-práticas"]
----
+# Avançando
 
 ## Indo além do básico
 

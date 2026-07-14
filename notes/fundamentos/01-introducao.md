@@ -1,11 +1,4 @@
----
-title: "Introdução"
-description: "O que é este laboratório, como está organizado e por onde começar."
-lastUpdated: 2026-04-14
-sidebar:
-  order: 1
-tags: ["introdução", "guia", "dados"]
----
+# Introdução
 
 ## O que é este laboratório?
 
