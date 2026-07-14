@@ -1,61 +1,49 @@
 # CLAUDE.md
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+Orientações para agentes de IA que trabalham neste repositório.
 
-## Sobre o lab
+## Visão geral
 
-Data Labs é o laboratório de ciência e engenharia de dados da Caramelo Tech. O conteúdo cobre SQL, Python (pandas, numpy), pipelines ETL e estatística aplicada. Público-alvo: iniciantes a intermediários.
+Repositório de **conteúdo puro** do Data Labs (Caramelo Tech). Contém apenas notas em Markdown - não há build, dependências, testes ou linting.
 
-## Comandos
+As notas são publicadas no site do Caramelo Labs em `https://caramelotech.com.br/labs/data/`. Quem monta e publica o site é o repositório hub [labs](https://github.com/caramelotech/labs): a cada push em `main` que altere `notes/` ou `sidebar.json`, o workflow `.github/workflows/notify-hub.yml` dispara o rebuild do hub via `repository_dispatch`.
 
-```bash
-npm install
-npm run dev      # servidor em localhost:4321
-npm run build    # build de produção
-npm run preview  # preview do build
+## Estrutura
+
+```
+notes/           # Notas em Markdown puro - cada arquivo vira uma página no site
+  index.md       # Página de entrada do lab no site
+  fundamentos/          # Introdução, conceitos básicos, avançando
+sidebar.json     # Seções da barra lateral no site (labels e ordem)
+examples/        # Exercícios e projetos práticos (não publicados no site)
 ```
 
-## Arquitetura
+## Escrevendo notas
 
-- `src/content/docs/` - anotações publicadas no site via Starlight
-- `src/content/docs/fundamentos/` - notas de introdução e conceitos fundamentais
-- `examples/` - scripts, queries e projetos práticos (não publicados no site)
-- `astro.config.mjs` - configuração do Astro/Starlight, incluindo sidebar e `base: '/data-labs'`
-- `src/styles/custom.css` - customizações visuais do tema
+As notas NÃO usam frontmatter. Regras:
 
-## Deployment
+- **A primeira linha da nota deve ser o título como `# H1`** - no site, ela vira o `title` da página (o hub injeta o frontmatter automaticamente)
+- Use `##` e `###` para as demais seções (apenas um `#` por arquivo, na primeira linha)
+- Prefixo numérico no nome do arquivo controla a ordem na barra lateral dentro da pasta: `01-nome.md`, `02-nome.md`
+- Imagens ficam junto das notas (ex: `notes/secao/assets/img.png`), referenciadas com caminho relativo em sintaxe Markdown: `![descrição](./assets/img.png)` - nunca use tags HTML `<img>` nem caminhos absolutos
+- Links para outras notas do site usam o caminho completo: `/labs/data/<secao>/<nota>/`
+- Frontmatter ainda é aceito para campos extras (`description`, `tags`), mas o padrão é não usar
 
-O site é publicado via GitHub Actions em `https://caramelotech.com.br/data-labs/`. O `base` em `astro.config.mjs` deve permanecer `/data-labs` para que os links funcionem corretamente no ambiente de produção.
+### Nova seção de tema
 
-## Convenções de conteúdo
-
-- Idioma: português (pt-BR)
-- Frontmatter obrigatório:
-  ```yaml
-  ---
-  title: "Título da nota"
-  description: "Descrição breve"
-  lastUpdated: 2026-01-01
-  sidebar:
-    order: 1
-  tags: ["sql", "pandas"]
-  ---
-  ```
-- Não repita o `title` como `# h1` - o Starlight renderiza automaticamente
-- Use `##` e `###` para seções
-- Inclua o "por quê", não apenas o "como"
-
-## Regra de sidebar.order
-
-**`sidebar.order` é sequencial por diretório**, não global. A ordem entre seções é controlada pelo array `sidebar` em `astro.config.mjs`. Dentro de cada pasta, numere os arquivos a partir de 1.
-
-Para adicionar uma nova seção superior (ex: `sql/`):
-1. Crie o diretório em `src/content/docs/sql/`
-2. Adicione um arquivo `index.md` como página de entrada
-3. Adicione uma entrada `autogenerate` em `astro.config.mjs`:
-   ```javascript
-   {
-     label: "SQL",
-     autogenerate: { directory: "sql" },
-   }
+1. Crie a subpasta em `notes/nova-secao/` com as notas
+2. Adicione a seção em `sidebar.json`:
+   ```json
+   { "label": "Título da Seção", "directory": "nova-secao" }
    ```
+
+## Convenções e preferências
+
+- Idioma: português brasileiro (pt-BR)
+- Usar hífens (-) em vez de travessões (—) em todos os textos
+- Em Markdown, NÃO usar `---` para separar seções (exceto para notas/atribuições no final do arquivo)
+- **Git:** Nunca fazer `git commit` ou `git push` automaticamente - apenas quando explicitamente solicitado
+
+## Recursos úteis
+
+- [labs (hub)](https://github.com/caramelotech/labs) - estrutura do site, script de fetch e deploy
