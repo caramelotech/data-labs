@@ -1,6 +1,21 @@
 {
   "sections": [
-    { "label": "Visão geral", "slug": "." },
-    { "label": "Fundamentos", "directory": "fundamentos" }
+    {
+      "label": "Visão geral",
+      "slug": "."
+    },
+    {
+      "label": "Fundamentos",
+      "directory": "fundamentos"
+    },
+    {
+      "label": "Projetos",
+      "directory": "projetos"
+    },
+    {
+      "label": "Prática",
+      "directory": "pratica"
+    }
   ]
 }
+

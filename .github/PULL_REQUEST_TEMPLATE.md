@@ -6,8 +6,8 @@
 
 - [ ] Nova anotação (`notes/`)
 - [ ] Novo exemplo (`examples/`)
-- [ ] Novo exercício (`examples/exercises.md`)
-- [ ] Novo projeto (`examples/projects.md`)
+- [ ] Novo exercício (`notes/pratica/01-exercicios.md`)
+- [ ] Novo projeto (`notes/pratica/02-projetos.md`)
 - [ ] Correção de conteúdo existente
 - [ ] Outro: <!-- descreva -->
 

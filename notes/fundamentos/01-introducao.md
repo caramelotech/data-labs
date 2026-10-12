@@ -19,15 +19,15 @@ O foco é trabalhar com dados de forma aplicada: coleta, transformação, análi
 | ---------------------------- | ----------------------------------- |
 | `/src/content/docs`          | Anotações e conceitos               |
 | `/examples`                  | Scripts e queries prontos           |
-| `/examples/exercises.md`     | Exercícios para praticar            |
-| `/examples/projects.md`      | Projetos para construir             |
+| `/labs/data/pratica/01-exercicios/`     | Exercícios para praticar            |
+| `/labs/data/pratica/02-projetos/`      | Projetos para construir             |
 
 ## Por onde começar
 
 1. Leia estas anotações em ordem
 2. Explore os exemplos em `/examples`
-3. Resolva os exercícios em `/examples/exercises.md`
-4. Monte os projetos em `/examples/projects.md`
+3. Resolva os exercícios em `/labs/data/pratica/01-exercicios/`
+4. Monte os projetos em `/labs/data/pratica/02-projetos/`
 
 ## Dica
 

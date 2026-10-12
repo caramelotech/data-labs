@@ -6,8 +6,8 @@ Obrigado por querer contribuir com o Data Labs!
 
 - Melhorias e correções nas anotações (`notes/`)
 - Novos exemplos práticos em `examples/`
-- Exercícios adicionais em `examples/exercises.md`
-- Projetos práticos em `examples/projects.md`
+- Exercícios adicionais em `notes/pratica/01-exercicios.md`
+- Projetos práticos em `notes/pratica/02-projetos.md`
 
 Melhorias no **site** (visual, navegação, deploy) são feitas no repositório hub [labs](https://github.com/caramelotech/labs).
 
@@ -50,13 +50,13 @@ As notas são **Markdown puro, sem frontmatter**:
 - Imagens ficam junto das notas (ex: `notes/secao/assets/img.png`) e são referenciadas com caminho relativo: `![descrição](./assets/img.png)`
 - Ao criar uma nova subpasta de tema, adicione a seção em `sidebar.json`
 
-### Exercícios (`examples/exercises.md`)
+### Exercícios (`notes/pratica/01-exercicios.md`)
 
 - Descreva claramente o objetivo
 - Indique o nível de dificuldade (iniciante / intermediário / avançado)
 - Inclua critérios de sucesso em formato de checklist
 
-### Projetos (`examples/projects.md`)
+### Projetos (`notes/pratica/02-projetos.md`)
 
 - Descreva o objetivo e o contexto
 - Liste os requisitos em formato de checklist

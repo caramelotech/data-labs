@@ -64,4 +64,4 @@ df.groupby('cidade')['valor'].sum()
 
 ## Próximo passo
 
-Veja os exemplos em `/examples` para ver esses conceitos na prática. Depois, pratique com os exercícios em `/examples/exercises.md`.
+Veja os exemplos em `/examples` para ver esses conceitos na prática. Depois, pratique com os exercícios em `/labs/data/pratica/01-exercicios/`.

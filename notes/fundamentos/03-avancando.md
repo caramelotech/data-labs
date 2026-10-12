@@ -61,5 +61,5 @@ Estruture o fluxo de dados de forma reproduzível.
 
 ## Próximo passo
 
-Aplique esses conceitos nos projetos em `/examples/projects.md`.
+Aplique esses conceitos nos projetos em `/labs/data/pratica/02-projetos/`.
 É construindo que o aprendizado se consolida.
