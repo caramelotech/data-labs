@@ -17,6 +17,7 @@ on:
 jobs:
   notify:
     runs-on: ubuntu-latest
+    permissions: {}
     steps:
       - name: Trigger labs rebuild
         run: |

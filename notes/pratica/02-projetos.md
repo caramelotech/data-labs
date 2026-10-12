@@ -9,25 +9,26 @@ Mini projetos para aplicar o que foi aprendido.
 3. Implemente incrementalmente
 4. Teste cada parte antes de avançar
 
-## Projeto 01 - Análise de Vendas
+## Projeto 01 - Estudo de Caso: Stack Overflow Developer Survey: Perfil e Tendências da Comunidade de Desenvolvedores
+**Objetivo:** Ler o Artigo Base e buscar construir análises que respondam questões que não foram contempladas no trabalho original.
 
-**Objetivo:** Analisar um dataset de vendas e extrair insights.
+O entregável será um relatório, em jupyter notebook (ou Google Colab), contendo todas os resultados das análises estatísticas e as discussões associadas a cada uma: o arquivo entregue deverá ser executável!
 
 **Descrição:**
-Dado um CSV com colunas `data`, `produto`, `categoria`, `quantidade` e `valor_unitario`, construa uma análise completa.
+Utilize a base de dados da Stack Overflow Developer Survey para realizar análises estatísticas e responder a perguntas como:
+- Qual é a distribuição de salários entre os desenvolvedores?
+- Quais são as linguagens de programação mais populares?
+- Existe alguma correlação entre anos de experiência e salário?
+- Quais são as tendências de adoção de tecnologias ao longo do tempo?
+- Quais são as diferenças de perfil entre desenvolvedores de diferentes regiões?
+- Quais são as principais motivações para os desenvolvedores escolherem suas linguagens
+- Quais são as principais barreiras enfrentadas pelos desenvolvedores em suas carreiras?
 
 **Requisitos:**
 
-- [ ] Carregar e explorar o dataset (shape, tipos, nulos)
-- [ ] Criar a coluna `valor_total = quantidade * valor_unitario`
-- [ ] Calcular o faturamento total por mês
-- [ ] Identificar o produto mais vendido por categoria
-- [ ] Gerar um gráfico de faturamento mensal
+- [ ] O produto será um relatório, em jupyter notebook (ou Google Colab), contendo todas os resultados das análises estatísticas e as discussões associadas a cada uma;
+- [ ] Caso necessário,será incluído nas análises outros conjuntos de dados;
 
-**Desafio extra:**
-
-- Identificar meses com queda de vendas em relação ao mês anterior
-- Calcular o ticket médio por categoria
 
 **Dica:**
 Comece pela exploração. Só transforme os dados depois de entender o que tem.
