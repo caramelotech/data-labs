@@ -12,15 +12,17 @@ O foco é trabalhar com dados de forma aplicada: coleta, transformação, análi
 - **Python** - pandas, numpy, visualização com matplotlib/seaborn
 - **Engenharia de dados** - pipelines, ETL, qualidade de dados
 - **Estatística aplicada** - medidas descritivas, distribuições, correlações
+- **Business intelligence** - dashboards e modelagem com Power BI
+- **Machine learning** - modelos com scikit-learn, avaliação e colocação em produção
 
 ## Como está organizado
 
-| Diretório                    | Conteúdo                            |
-| ---------------------------- | ----------------------------------- |
-| `/src/content/docs`          | Anotações e conceitos               |
-| `/examples`                  | Scripts e queries prontos           |
-| `/labs/data/pratica/01-exercicios/`     | Exercícios para praticar            |
-| `/labs/data/pratica/02-projetos/`      | Projetos para construir             |
+| Diretório                           | Conteúdo                  |
+| ----------------------------------- | ------------------------- |
+| `/src/content/docs`                 | Anotações e conceitos     |
+| `/examples`                         | Scripts e queries prontos |
+| `/labs/data/pratica/01-exercicios/` | Exercícios para praticar  |
+| `/labs/data/pratica/02-projetos/`   | Projetos para construir   |
 
 ## Por onde começar
 

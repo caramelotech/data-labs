@@ -59,6 +59,12 @@ Estruture o fluxo de dados de forma reproduzível.
 - Prefira operações vetorizadas a loops em pandas
 - Teste seus pipelines com amostras pequenas antes de rodar no dataset completo
 
+## Para se aprofundar
+
+- Todos os tipos de join, com exemplos e diferenças entre bancos: [Joins](/labs/data/sql/09-joins/)
+- Nulos, duplicatas, outliers, encoding e escalonamento: [Limpeza e pré-processamento](/labs/data/ciencia-de-dados/04-limpeza-e-pre-processamento/)
+- Pipelines na prática: [Projetos de engenharia de dados](/labs/data/projetos/01-projetos-de-engenharia-de-dados/)
+
 ## Próximo passo
 
 Aplique esses conceitos nos projetos em `/labs/data/pratica/02-projetos/`.

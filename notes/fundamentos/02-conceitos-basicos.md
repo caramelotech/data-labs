@@ -62,6 +62,11 @@ adultos = df[df['idade'] > 18]
 df.groupby('cidade')['valor'].sum()
 ```
 
+## Para se aprofundar
+
+- SQL do zero, com consultas, filtros e agregações: [Consultas com SELECT](/labs/data/sql/06-consultas-com-select/) e [Agregações, GROUP BY e HAVING](/labs/data/sql/08-agregacoes-group-by-e-having/)
+- Ambiente Python, NumPy e pandas: [Ambiente Python e bibliotecas](/labs/data/ciencia-de-dados/02-ambiente-python-e-bibliotecas/)
+
 ## Próximo passo
 
 Veja os exemplos em `/examples` para ver esses conceitos na prática. Depois, pratique com os exercícios em `/labs/data/pratica/01-exercicios/`.
