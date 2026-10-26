@@ -16,11 +16,12 @@ As notas deste repositório são publicadas no site do [Caramelo Labs](https://c
 
 ## Conteúdo
 
-| Seção       | Escopo                                                 |
-| ----------- | ------------------------------------------------------ |
-| Fundamentos | Introdução, conceitos básicos e tópicos avançados      |
-| Projetos    | Projetos já publicados como notas do lab               |
-| Prática     | Exercícios e projetos para aplicar os conteúdos do lab |
+| Seção            | Escopo                                                                       |
+| ---------------- | ---------------------------------------------------------------------------- |
+| Fundamentos      | Introdução, conceitos básicos e tópicos avançados                            |
+| SQL              | Linguagem SQL do zero: estrutura, consultas, joins e transações              |
+| Projetos         | Ideias de projetos práticos para portfólio                                   |
+| Prática          | Exercícios, projetos e preparação para entrevistas                           |
 
 ## Estrutura do repositório
 
