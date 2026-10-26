@@ -20,6 +20,7 @@ As notas deste repositório são publicadas no site do [Caramelo Labs](https://c
 | ---------------- | ---------------------------------------------------------------------------- |
 | Fundamentos      | Introdução, conceitos básicos e tópicos avançados                            |
 | SQL              | Linguagem SQL do zero: estrutura, consultas, joins e transações              |
+| Power BI         | Business intelligence com Power BI: Power Query, modelagem e DAX             |
 | Projetos         | Ideias de projetos práticos para portfólio                                   |
 | Prática          | Exercícios, projetos e preparação para entrevistas                           |
 

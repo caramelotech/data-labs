@@ -13,6 +13,10 @@
       "directory": "sql"
     },
     {
+      "label": "Power BI",
+      "directory": "power-bi"
+    },
+    {
       "label": "Projetos",
       "directory": "projetos"
     },
