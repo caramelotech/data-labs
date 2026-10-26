@@ -9,6 +9,10 @@
       "directory": "fundamentos"
     },
     {
+      "label": "SQL",
+      "directory": "sql"
+    },
+    {
       "label": "Projetos",
       "directory": "projetos"
     },
@@ -18,4 +22,3 @@
     }
   ]
 }
-
