@@ -6,6 +6,7 @@ Base de conhecimento sobre **dados** do Caramelo Tech - ciência de dados, anál
 
 - **Fundamentos** - introdução, conceitos básicos e tópicos avançados
 - **SQL** - a linguagem dos bancos relacionais, da criação de tabelas a joins, views e transações
+- **Power BI** - business intelligence na prática: Power Query, modelagem, DAX, visuais e publicação
 - **Projetos** - ideias de projetos práticos para montar portfólio e aplicar os conceitos em stacks reais
 - **Prática** - exercícios, projetos guiados e preparação para entrevistas
 
