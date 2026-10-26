@@ -21,6 +21,9 @@ As notas deste repositório são publicadas no site do [Caramelo Labs](https://c
 | Fundamentos      | Introdução, conceitos básicos e tópicos avançados                            |
 | SQL              | Linguagem SQL do zero: estrutura, consultas, joins e transações              |
 | Power BI         | Business intelligence com Power BI: Power Query, modelagem e DAX             |
+| Ciência de dados | Fluxo de ciência de dados com Python: coleta, preparação, EDA e visualização |
+| Machine learning | Algoritmos, métricas, validação e tópicos como séries temporais e NLP        |
+| ML em produção   | Deploy, MLOps, design de sistemas de ML e monitoramento                      |
 | Projetos         | Ideias de projetos práticos para portfólio                                   |
 | Prática          | Exercícios, projetos e preparação para entrevistas                           |
 

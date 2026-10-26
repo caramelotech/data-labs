@@ -17,6 +17,18 @@
       "directory": "power-bi"
     },
     {
+      "label": "Ciência de dados",
+      "directory": "ciencia-de-dados"
+    },
+    {
+      "label": "Machine learning",
+      "directory": "machine-learning"
+    },
+    {
+      "label": "ML em produção",
+      "directory": "ml-em-producao"
+    },
+    {
       "label": "Projetos",
       "directory": "projetos"
     },
