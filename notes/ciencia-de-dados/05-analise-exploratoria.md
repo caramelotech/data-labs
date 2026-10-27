@@ -157,6 +157,14 @@ Chinstrap  3733.1  3700.0  384.3
 Gentoo     5076.0  5000.0  504.1
 ```
 
+![Dispersão entre comprimento da nadadeira e massa corporal, colorida por espécie](./assets/05-dispersao-nadadeira-massa.png)
+
+_Figura 1: Nadadeira e massa, por espécie. As três espécies formam grupos distintos no gráfico._
+
+![Box plot da massa corporal por espécie, com os pontos individuais](./assets/05-box-massa-especie.png)
+
+_Figura 2: Massa por espécie. Cada ponto é um pinguim; o box plot mostra a mediana e os quartis de cada grupo._
+
 Aí está a explicação do desvio-padrão alto no `describe()`: dentro de cada espécie a variação é bem menor, a dispersão geral vinha da mistura.
 
 ```python
@@ -165,6 +173,10 @@ tabela = pd.crosstab(df["species"], df["island"])
 sns.heatmap(tabela, annot=True, fmt="d", cmap="Blues")
 plt.show()
 ```
+
+![Heatmap com a quantidade de pinguins por espécie e ilha](./assets/05-heatmap-especie-ilha.png)
+
+_Figura 3: Quantidade de pinguins por espécie e ilha. Os zeros são combinações que não existem no dataset._
 
 A tabela cruzada mostra que os Gentoo só aparecem em Biscoe e os Chinstrap só em Dream. Isso importa para modelagem: a ilha sozinha já "entrega" boa parte da espécie.
 
@@ -208,6 +220,10 @@ df.groupby("species")[["bill_length_mm", "bill_depth_mm"]].corr()
 ```
 
 Isso é o **paradoxo de Simpson**: os Gentoo têm bicos longos e rasos, as outras espécies bicos curtos e profundos, e a mistura cria uma tendência geral oposta à de cada grupo. Colorir o scatter por espécie (`hue="species"`) deixa isso visível na hora.
+
+![Dois gráficos de dispersão do comprimento x profundidade do bico: à esquerda com todos os pinguins, à direita separados por espécie](./assets/05-simpson-bico.png)
+
+_Figura 4: Paradoxo de Simpson. À esquerda, a tendência geral é negativa; à direita, separada por espécie, a tendência é positiva em cada grupo._
 
 ## Análise multivariada
 
